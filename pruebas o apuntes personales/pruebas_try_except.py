@@ -4,10 +4,11 @@ while (True):                                                               #un 
         numero2 = float(input("ingresa otro numero para realizar la suma"))   #una suma estandar
         resultado = numero1 + numero2                                           
         print (f"el resultado de la suma es {resultado} ")                  #resutado de la suma
-    except:                                                                 #esta es la excepcion                 
+    except:                                                                 #esta es la excepcion
+        print(type(resultado).__name__)                                     #typeError  
         print("metiste cualquier cosa animal, debias meter un numero")      #imprimimos el por siacaso
     else: 
         print("mira eres capaz de sumar, que orgullo ")
         break
     finally:
-        print("hemos acabdo")
+        print("hemos acabado")
